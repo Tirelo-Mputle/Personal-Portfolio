@@ -4,11 +4,13 @@ import { ThemeProvider } from "styled-components";
 const theme = {
   colors: {
     mainGray: "#1B1A17",
+    secondaryGray: "#b3b3b3",
     mainOrange: "#FF8303",
     brown: "#A35709",
     peach: "#F0E3CA",
     lightPeach: "#fffefd",
     white: "#FFF",
+    modalBackground: "#141414b7",
   },
   fontSizes: {
     xxSm: "0.5rem",

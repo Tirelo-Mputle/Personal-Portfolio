@@ -1,14 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLinks } from "../UI";
 import styled from "styled-components";
+import { navItems, MappedNavList } from "./index";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavbarSection = styled.section`
-  width: 85vw;
-  margin: 0 auto;
+  max-width: 100vw;
+
+  padding: 2rem 7.5vw;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 0;
+  align-items: center;
+
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   /* box-shadow:  */
@@ -25,28 +28,41 @@ const TMLogo = styled.span`
   padding: 0.5rem;
   font-family: ${({ theme }) => theme.fonts.limeLight};
 `;
-const NavList = styled.ul`
-  font-family: ${({ theme }) => theme.fonts.robotoMono};
-  font-size: ${({ theme }) => theme.fontSizes.xSm};
-  gap: 2rem;
-  display: none;
+const NavToggle = styled.div`
+  display: block;
+  font-size: 2.5rem;
+  color: ${({ theme }) => theme.colors.mainGray};
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.colors.secondaryGray};
+  }
+
   @media screen and (min-width: ${({ theme }) => theme.mediaScreen.laptop}) {
-    display: flex;
+    display: none;
   }
 `;
+// const NavList = styled.ul`
+//   font-family: ${({ theme }) => theme.fonts.robotoMono};
+//   font-size: ${({ theme }) => theme.fontSizes.sm};
+//   gap: 2rem;
+//   display: none;
+//   @media screen and (min-width: ${({ theme }) => theme.mediaScreen.laptop}) {
+//     display: flex;
+//   }
+// `;
+// const NavListItem = styled.li`
+//   text-transform: capitalize;
+// `;
 const Navbar = (props) => {
   return (
     <NavbarSection>
-      <TMLogo>tm.</TMLogo>
-      <div>
+      <NavLinks to="/">
+        <TMLogo>tm.</TMLogo>
+      </NavLinks>
+      <NavToggle onClick={props.openSideNav}>
         <GiHamburgerMenu />
-      </div>
-      <NavList>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Resume</li>
-        <li>Contact</li>
-      </NavList>
+      </NavToggle>
+      <MappedNavList></MappedNavList>
     </NavbarSection>
   );
 };
