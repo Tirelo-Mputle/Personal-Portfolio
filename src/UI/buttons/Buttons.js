@@ -13,7 +13,7 @@ const StyledButton = styled.button`
     font-size: ${({ theme }) => theme.fontSizes.xxMed};
   }
   &.small {
-    padding: 1.5rem 2rem;
+    padding: 0.5rem 1rem;
     color: ${(props) => props.fontColor};
     background-color: ${(props) => props.btnColor};
     font-weight: 400;

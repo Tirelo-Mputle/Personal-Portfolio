@@ -8,6 +8,7 @@ const theme = {
     secondaryGray: "#b3b3b3",
     mainOrange: "#FF8303",
     brown: "#A35709",
+    lightBrown: "#e4be99",
     peach: "#F0E3CA",
     lightPeach: "#fffefd",
     white: "#FFF",

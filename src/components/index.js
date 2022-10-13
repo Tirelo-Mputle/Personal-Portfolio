@@ -5,5 +5,15 @@ import MappedNavList from "./NavItemsData";
 
 import Intro from "./introSection/Intro";
 import Projects from "./projectsSection/Projects";
-
-export { Navbar, Intro, navItems, MappedNavList, Projects };
+//Project info
+import ProjectItem from "./projectsSection/ProjectItem";
+import projectData from "./projectsSection/ProjectsData";
+export {
+  Navbar,
+  Intro,
+  navItems,
+  MappedNavList,
+  Projects,
+  ProjectItem,
+  projectData,
+};
