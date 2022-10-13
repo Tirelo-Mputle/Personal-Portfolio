@@ -6,10 +6,10 @@ import { Home, About, Projects, Resume, Contact } from "./pages/index";
 //components
 import { Navbar } from "./components/index";
 //UI
-import { GlobalStyle, Theme, BackOverlay, WhiteOverlay } from "./UI/index";
+import { GlobalStyle, Theme, WhiteOverlay } from "./UI/index";
 function App() {
-  const [isSideNavOpen, setIsSideNavOpen] = useState(true);
-  const [isBackOverlay, setIsBackOverlay] = useState(true);
+  const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+  const [isBackOverlay, setIsBackOverlay] = useState(false);
   const openSideNav = () => {
     setIsSideNavOpen(true);
     setIsBackOverlay(true);

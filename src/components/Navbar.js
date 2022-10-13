@@ -7,14 +7,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const NavbarSection = styled.section`
   max-width: 100vw;
 
-  padding: 2rem 7.5vw;
+  padding: 1rem 7.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  /* box-shadow:  */
+  box-shadow: ; */
 `;
 const TMLogo = styled.span`
   font-size: ${({ theme }) => theme.fontSizes.xxMed};
@@ -41,18 +41,7 @@ const NavToggle = styled.div`
     display: none;
   }
 `;
-// const NavList = styled.ul`
-//   font-family: ${({ theme }) => theme.fonts.robotoMono};
-//   font-size: ${({ theme }) => theme.fontSizes.sm};
-//   gap: 2rem;
-//   display: none;
-//   @media screen and (min-width: ${({ theme }) => theme.mediaScreen.laptop}) {
-//     display: flex;
-//   }
-// `;
-// const NavListItem = styled.li`
-//   text-transform: capitalize;
-// `;
+
 const Navbar = (props) => {
   return (
     <NavbarSection>

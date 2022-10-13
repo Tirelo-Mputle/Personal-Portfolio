@@ -5,14 +5,20 @@ import GlobalStyle from "./theming/GlobalStyles";
 import Theme from "./theming/Theme";
 //links
 import NavLinks from "./links/NavLink";
+import Links from "./links/Links";
 //modal
 import BackOverlay from "./modal/BackOverlay";
 import WhiteOverlay from "./modal/WhiteOverlay";
+//buttons
+import Buttons from "./buttons/Buttons";
+
 export {
   CenteredSection,
   GlobalStyle,
   Theme,
   NavLinks,
+  Links,
   BackOverlay,
   WhiteOverlay,
+  Buttons,
 };
