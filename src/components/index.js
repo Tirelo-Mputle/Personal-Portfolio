@@ -8,6 +8,8 @@ import Projects from "./projectsSection/Projects";
 //Project info
 import ProjectItem from "./projectsSection/ProjectItem";
 import projectData from "./projectsSection/ProjectsData";
+//about
+import AboutSection from "./aboutSection/AboutSection";
 export {
   Navbar,
   Intro,
@@ -16,4 +18,5 @@ export {
   Projects,
   ProjectItem,
   projectData,
+  AboutSection,
 };

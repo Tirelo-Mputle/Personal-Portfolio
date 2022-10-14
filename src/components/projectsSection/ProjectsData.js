@@ -9,19 +9,19 @@ const projectData = [
     tools: ["React", "Styled Components"],
     stateManagement: "useState",
     api: "",
-    github: "",
-    siteLink: "",
+    github: "https://github.com/Tirelo-Mputle/two14-coffee-portfolio-project",
+    siteLink: "https://two14coffee.netlify.app/",
   },
   {
     projectName: "Shortly - link shortener",
     description:
       "Shorten any valid URL with this URL shortener. It uses the ..... API to create the short links. The copy button copies the link to your clipboard. The local storage saves a maximum of three links. ",
     image: shortnerSiteImg,
-    tools: ["React", "Styled Components"],
+    tools: ["React", "Styled Components", "API"],
     stateManagement: "useState",
     api: "",
     github: "",
-    siteLink: "",
+    siteLink: "https://shortly-url-shorter-api.netlify.app/",
   },
 ];
 

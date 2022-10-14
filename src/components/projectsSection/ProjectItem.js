@@ -3,38 +3,29 @@ import styled from "styled-components";
 import { Buttons, Links } from "../../UI/index";
 
 const ProjectItemContainer = styled.article`
-  position: relative;
   max-width: 30rem;
-  height: 25rem;
-  max-height: 30rem;
-  object-fit: cover;
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-`;
-const ProjectOverlay = styled.div`
-  background-color: #00000099;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 1rem;
-
-  &:hover {
-    opacity: 0;
-  }
-`;
-const ProjectImg = styled.img`
-  border-radius: 1rem;
   width: 100%;
-  height: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  background-color: ${({ theme }) => theme.colors.lightPeach};
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+`;
+
+const ProjectCardBottom = styled.footer``;
+
+const ProjectImg = styled.video`
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  height: 20rem;
 `;
 
 const ProjectBanner = styled.div`
-  position: absolute;
   padding: 2rem;
-  bottom: 0;
-  left: 0;
   max-width: 100%;
   max-height: 100%;
 `;
@@ -46,10 +37,10 @@ const ProjectName = styled.span`
   color: ${({ theme }) => theme.colors.lightBrown};
 `;
 const ProjectDescription = styled.p`
-  color: ${({ theme }) => theme.colors.lightPeach};
+  color: ${({ theme }) => theme.colors.darkGray};
 `;
 const ProjectToolsContainer = styled.div`
-  color: ${({ theme }) => theme.colors.lightBrown};
+  color: ${({ theme }) => theme.colors.darkGray};
   display: flex;
   font-weight: 600;
   gap: 1rem;
@@ -62,37 +53,48 @@ const ProjectsButtonsContainer = styled.div`
 const ProjectItem = (props) => {
   return (
     <ProjectItemContainer>
-      <ProjectOverlay></ProjectOverlay>
-      <ProjectImg src={props.image} alt={props.projectName} />
-      <ProjectBanner>
-        <ProjectName>{props.projectName}</ProjectName>
-        <ProjectDescription>{props.description}</ProjectDescription>
-        <ProjectToolsContainer>
-          {props.tools.map((tool, index) => {
-            return <span key={index}>{tool}</span>;
-          })}
-        </ProjectToolsContainer>
-        <ProjectsButtonsContainer>
-          <Links to="projects">
-            <Buttons
-              className="small"
-              fontColor={(props) => props.theme.colors.white}
-              btnColor={(props) => props.theme.colors.darkGray}
-              type="button"
-            >
-              github
-            </Buttons>
-          </Links>
-          <Buttons
-            className="small"
-            fontColor={(props) => props.theme.colors.white}
-            btnColor={(props) => props.theme.colors.brown}
-            type="button"
-          >
-            site
-          </Buttons>
-        </ProjectsButtonsContainer>
-      </ProjectBanner>
+      <ProjectImg
+        controls
+        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+        poster={props.image}
+        // preload="auto"
+      ></ProjectImg>
+
+      <ProjectCardBottom>
+        <ProjectBanner>
+          <ProjectName>{props.projectName}</ProjectName>
+          <ProjectDescription>{props.description}</ProjectDescription>
+          <ProjectToolsContainer>
+            {props.tools.map((tool, index) => {
+              return <span key={index}>{tool}</span>;
+            })}
+          </ProjectToolsContainer>
+          <ProjectsButtonsContainer>
+            <a href={props.github}>
+              <Buttons
+                className="small"
+                fontColor={(props) => props.theme.colors.white}
+                btnColor={(props) => props.theme.colors.darkGray}
+                type="button"
+              >
+                Github
+              </Buttons>
+            </a>
+
+            <a href={props.siteLink}>
+              {" "}
+              <Buttons
+                className="small"
+                fontColor={(props) => props.theme.colors.white}
+                btnColor={(props) => props.theme.colors.brown}
+                type="button"
+              >
+                View site
+              </Buttons>
+            </a>
+          </ProjectsButtonsContainer>
+        </ProjectBanner>
+      </ProjectCardBottom>
     </ProjectItemContainer>
   );
 };

@@ -11,7 +11,8 @@ import BackOverlay from "./modal/BackOverlay";
 import WhiteOverlay from "./modal/WhiteOverlay";
 //buttons
 import Buttons from "./buttons/Buttons";
-
+//headings
+import SectionHeading from "./headings/SectionHeading";
 export {
   CenteredSection,
   GlobalStyle,
@@ -21,4 +22,5 @@ export {
   BackOverlay,
   WhiteOverlay,
   Buttons,
+  SectionHeading,
 };
