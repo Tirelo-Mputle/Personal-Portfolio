@@ -1,8 +1,7 @@
 import React from "react";
-// UI
-import { CenteredSection } from "../UI";
+
 //components
-import { Intro, Projects, AboutSection } from "../components";
+import { Intro, Projects, AboutSection, Footer } from "../components";
 const Home = (props) => {
   return (
     <>

@@ -11,7 +11,13 @@ const GlobalStyle = createGlobalStyle`
         background-color: ${({ theme }) => theme.colors.lightPeach};;
     }
     a{
-        text-decoration: none;
+        &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
    
     }
     li{

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { navItems } from "../../components/index";
+import { navItems, ResumeLink } from "../../components/index";
 import { NavLinks } from "../index";
 import { ImCross } from "react-icons/im";
-import { BackOverlay } from "../../UI/index";
+import { BackOverlay, Buttons } from "../../UI/index";
 const WhiteOverlayContainer = styled.div`
   @media screen and (min-width: ${({ theme }) => theme.mediaScreen.laptop}) {
     display: none;
@@ -59,6 +59,7 @@ const WhiteOverlay = (props) => {
               </NavLinks>
             );
           })}
+          <ResumeLink />
         </SideNavList>
       </StyledWhiteOverlay>
     </WhiteOverlayContainer>

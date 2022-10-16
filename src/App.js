@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //pages
 import { Home, About, Projects, Resume, Contact } from "./pages/index";
 //components
-import { Navbar } from "./components/index";
+import { Navbar, Footer } from "./components/index";
 //UI
 import { GlobalStyle, Theme, WhiteOverlay } from "./UI/index";
 function App() {
@@ -38,8 +38,9 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="about" element={<About />} />
           <Route path="resume" element={<Resume />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="contacts" element={<Contact />} />
         </Routes>
+        <Footer />
       </Theme>
     </BrowserRouter>
   );

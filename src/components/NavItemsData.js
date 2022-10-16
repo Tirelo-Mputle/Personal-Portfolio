@@ -1,7 +1,8 @@
 import React from "react";
-import { NavLinks } from "../UI/index";
+import { NavLinks, Buttons } from "../UI/index";
 import styled from "styled-components";
-export const navItems = ["projects", "about", "resume", "contact"];
+import { ResumeLink } from "../components/index";
+export const navItems = ["projects", "about", "contacts"];
 const NavList = styled.ul`
   font-family: ${({ theme }) => theme.fonts.robotoMono};
   font-size: ${({ theme }) => theme.fontSizes.sm};
@@ -9,6 +10,7 @@ const NavList = styled.ul`
   display: none;
   @media screen and (min-width: ${({ theme }) => theme.mediaScreen.laptop}) {
     display: flex;
+    align-items: center;
   }
 `;
 const NavListItem = styled.li`
@@ -28,6 +30,7 @@ const MappedNavList = () => {
           </NavLinks>
         );
       })}
+      <ResumeLink />
     </NavList>
   );
 };

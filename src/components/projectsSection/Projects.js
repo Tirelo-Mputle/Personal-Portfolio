@@ -7,7 +7,7 @@ const ProjectsSection = styled.section`
   background-color: ${({ theme }) => theme.colors.lightGray};
   padding: 3rem 0;
 `;
-const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.div`
   width: 85vw;
   margin: 0 auto;
   display: flex;
@@ -20,16 +20,7 @@ const ProjectsContainer = styled.div`
     gap: 3rem;
   }
 `;
-const ProjectsHeading = styled.h2`
-  text-align: center;
-  font-size: ${({ theme }) => theme.fontSizes.lg};
-  color: ${({ theme }) => theme.colors.darkGray};
-  margin-bottom: 3rem;
-  @media screen and (min-width: ${({ theme }) => theme.mediaScreen.lgLaptop}) {
-    margin-bottom: 4rem;
-    font-size: ${({ theme }) => theme.fontSizes.xBig};
-  }
-`;
+
 const Projects = () => {
   return (
     <ProjectsSection>
