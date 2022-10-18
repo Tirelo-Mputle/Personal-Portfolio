@@ -4,7 +4,7 @@ import { Buttons } from "../UI";
 const ResumeLink = () => {
   return (
     <a
-      href="https://drive.google.com/file/d/1ZcWuFCKkj4rlq-rJbcyQEukfLpabKa5R/view?usp=sharing"
+      href="https://drive.google.com/file/d/1bSIhtWANZ9OMz2pWlrJ-Ilr9LLKzD9Ro/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
     >

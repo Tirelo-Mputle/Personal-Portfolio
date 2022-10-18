@@ -1,5 +1,7 @@
 import twoCoffeSiteImg from "../../assets/images/two14coffee.JPG";
 import shortnerSiteImg from "../../assets/images/shortener.JPG";
+import two14Video from "../../assets/video/two14 final video.mp4";
+import shortlyVideo from "../../assets/video/shortly final video.mp4";
 const projectData = [
   {
     projectName: "Two 14 Coffee website",
@@ -11,6 +13,7 @@ const projectData = [
     api: "",
     github: "https://github.com/Tirelo-Mputle/two14-coffee-portfolio-project",
     siteLink: "https://two14coffee.netlify.app/",
+    video: two14Video,
   },
   {
     projectName: "Shortly - link shortener",
@@ -20,8 +23,9 @@ const projectData = [
     tools: ["React", "Styled Components", "API"],
     stateManagement: "useState",
     api: "",
-    github: "",
+    github: "https://github.com/Tirelo-Mputle/Shortly-Link-Shortener",
     siteLink: "https://shortly-url-shorter-api.netlify.app/",
+    video: shortlyVideo,
   },
 ];
 

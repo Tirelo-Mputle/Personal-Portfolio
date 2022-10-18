@@ -55,9 +55,9 @@ const ProjectItem = (props) => {
     <ProjectItemContainer>
       <ProjectImg
         controls
-        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+        src={props.video}
         poster={props.image}
-        // preload="auto"
+        preload="auto"
       ></ProjectImg>
 
       <ProjectCardBottom>
