@@ -70,7 +70,7 @@ const ProjectItem = (props) => {
             })}
           </ProjectToolsContainer>
           <ProjectsButtonsContainer>
-            <a href={props.github}>
+            <a href={props.github} target="_blank" rel="noopener">
               <Buttons
                 className="small"
                 fontColor={(props) => props.theme.colors.white}
@@ -81,8 +81,7 @@ const ProjectItem = (props) => {
               </Buttons>
             </a>
 
-            <a href={props.siteLink}>
-              {" "}
+            <a href={props.siteLink} target="_blank" rel="noopener">
               <Buttons
                 className="small"
                 fontColor={(props) => props.theme.colors.white}
