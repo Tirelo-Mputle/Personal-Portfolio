@@ -5,6 +5,7 @@ import { Buttons, Links } from "../../UI/index";
 const ProjectItemContainer = styled.article`
   max-width: 30rem;
   width: 100%;
+
   margin-bottom: 2rem;
   display: flex;
   border-radius: 1rem;
@@ -20,21 +21,20 @@ const ProjectImg = styled.video`
   border-top-right-radius: 1rem;
   width: 100%;
   min-height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   height: 20rem;
 `;
 
 const ProjectBanner = styled.div`
   padding: 2rem;
   max-width: 100%;
-  max-height: 100%;
+  height: 100%;
 `;
 const ProjectName = styled.span`
   display: block;
   font-size: ${({ theme }) => theme.fontSizes.med};
   font-weight: 900;
-
-  color: ${({ theme }) => theme.colors.lightBrown};
+  color: ${({ theme }) => theme.colors.brown};
 `;
 const ProjectDescription = styled.p`
   color: ${({ theme }) => theme.colors.darkGray};

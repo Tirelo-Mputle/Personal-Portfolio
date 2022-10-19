@@ -35,7 +35,7 @@ const Contacts = () => {
       <ContactsSocialsContainer>
         <span>
           <a
-            href="https://www.linkedin.com/in/tirelo-mputle-70b93986/"
+            href="https://www.linkedin.com/in/tirelo-mputle/"
             target="_blank"
             rel="noopener noreferrer"
           >

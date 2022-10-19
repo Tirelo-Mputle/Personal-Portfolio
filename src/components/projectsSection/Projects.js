@@ -9,14 +9,17 @@ const ProjectsSection = styled.section`
 `;
 export const ProjectsContainer = styled.div`
   width: 85vw;
+  height: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media screen and (min-width: ${({ theme }) => theme.mediaScreen.lgLaptop}) {
     display: grid;
 
     grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
     gap: 3rem;
   }
 `;
